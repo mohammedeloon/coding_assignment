@@ -1,0 +1,130 @@
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+ul.navbar li {
+  float: right;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+
+ul.navbar li a:hover {
+  color: #d1884f;
+}
+
+ul.navbar li a i {
+  padding-right: 8px;
+}
+
+.content {
+  color: white;
+  padding: 70px;
+  width: auto;
+  text-align: left;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: white;
+  color: #008aaa;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #008aaa;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #008aaa;
+  color: white;
+}
+
+.profile-img {
+  position: absolute;
+  left: 1200px;
+  top: 150px;
+  border-bottom-left-radius: 150px;
+  float: right;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.profile-img-repeat {
+  height: 360px;
+  width: 300px;
+  background-color: #d0a07c;
+  border-bottom-left-radius: 150px;
+  position: absolute;
+  left: 1180px;
+  top: 180px;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .navbar li {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar li a {
+    padding: 10px 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-img,
+  .profile-img-repeat {
+    position: sticky;
+    width: auto;
+    margin: 20px 0;
+    border-bottom-left-radius: 150px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .profile-img {
+    position: sticky;
+    margin: 20px 0;
+    border-bottom-left-radius: 150px;
+    width: 300px;
+  }
+  .profile-img-repeat {
+    position: sticky;
+    width: auto;
+    height: 360px;
+    width: 300px;
+    background-color: #d0a07c;
+    border-bottom-left-radius: 150px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 321px) {
+  .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
